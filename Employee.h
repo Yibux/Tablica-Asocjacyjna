@@ -12,11 +12,12 @@
 using namespace std;
 
 class Employee{
-    string name;
-    string postion;
-    int age;
+
 public:
-    Employee(string a="", string b="", int c=0) : name(a), postion(b), age(c) {}
+    string name;
+    string position;
+    int age;
+    Employee(string a="", string b="", int c=0) : name(a), position(b), age(c) {}
     friend ostream& operator<<(ostream& s, const Employee& e)
     {
         const char * Name = e.name.c_str();
