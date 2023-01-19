@@ -28,6 +28,7 @@ void addEmployees(Database& database) {
     database.add(761028073, Employee("Jan Kowalski", "salesman", 28)); 	// Add first employee: name: Jan Kowalski, position: salseman, age: 28,
     database.add(510212881, Employee("Adam Nowak", "storekeeper", 54));	// Add second employee
     database.add(730505129, Employee("Anna Zaradna", "secretary", 32));	// Add third employee
+    database.add(730505129, Employee("Anna Zaradna", "secretary", 32));	// Add third employee
 }
 
 void modifyEmployees(Database& database) {

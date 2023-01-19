@@ -25,6 +25,7 @@ public:
 
     void add(Number id, Value date) {
         if (find(id)) {
+			cout<<"Id "<<id<<" jest zajete!"<<endl;
             return;
         }
         struct array pom;
@@ -33,7 +34,6 @@ public:
         data.push_back(pom);
     }
 
-    //find
     Value *find(Number id) {
         if (data.empty()) {
             return NULL;
@@ -46,7 +46,6 @@ public:
         return NULL;
     }
 
-    //wypisanie
     friend ostream &operator<<(ostream &os, const Map &x) {
         for (unsigned int i = 0; i < x.data.size(); i++) {
             os << x.data[i].info<<endl;
